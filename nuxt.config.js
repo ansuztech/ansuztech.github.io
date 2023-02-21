@@ -53,7 +53,6 @@ export default {
       lang: 'pt-br'
     }
   },
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
