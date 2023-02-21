@@ -67,3 +67,17 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+## Erros e soluções
+
+Erro final:
+    opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+    library: 'digital envelope routines',
+    reason: 'unsupported',
+    code: 'ERR_OSSL_EVP_UNSUPPORTED'
+
+Erro devido a versão do node usar open-ssl mais atual do que o usado na base do Nuxt2
+
+Solução, no powershell antes de iniciar os trabalhos digite:
+
+$env:NODE_OPTIONS = "--openssl-legacy-provider"
