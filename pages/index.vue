@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="banner efeito-verde">
-      <img class="banner-img" style="width: 10rem" src="~/assets/logo-branco.png">
+      <img class="banner-img" style="width: 10rem" src="~/assets/img/logo-branco.png">
     </div>
     <div>
       <h1>Welcome to the homepage</h1>
